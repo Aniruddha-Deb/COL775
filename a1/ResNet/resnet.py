@@ -422,7 +422,7 @@ def q1_part3(cifar10_path):
     model = ResNet(2, 10).to(device)
 
     optimizer = optim.SGD(model.parameters(), lr=0.1)
-    scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=[5,15,40], gamma=0.1)
+    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.2)
     loss_fn = nn.CrossEntropyLoss()
 
     best_model, (train_losses, val_losses) = train_model(model, optimizer, scheduler, dataloaders, loss_fn, max_epochs=n_epochs, early_stopping=True)
@@ -470,7 +470,7 @@ def q2_part1(cifar10_path):
         model = ResNet(2, 10, batch_norm_class=norm_class).to(device)
 
         optimizer = optim.SGD(model.parameters(), lr=0.1)
-        scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=[5,15,40], gamma=0.1)
+        scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.2)
         loss_fn = nn.CrossEntropyLoss()
 
         best_model, (train_losses, val_losses) = train_model(
@@ -486,6 +486,47 @@ def q2_part1(cifar10_path):
     pickle.dump(train_curves, open('pt2_train_curves.pkl', 'wb'))
     pickle.dump(val_curves, open('pt2_val_curves.pkl', 'wb'))
 
+def q2_part2(cifar10_path):
+    norm_classes = {
+        'bn': BatchNormalizer,
+        'gn': GroupNormalizer
+    }
+
+    splits = {
+        'train': [f'{cifar10_path}/data_batch_{i}' for i in range(1,5)],
+        'val': [f'{cifar10_path}/data_batch_5'],
+        'test': [f'{cifar10_path}/test_batch']
+    }
+    datasets = {split: Cifar10Dataset(batch_files) for split, batch_files in splits.items()}
+
+    n_epochs = 50
+    if DEBUG:
+        datasets = {split: Subset(dataset, np.arange(debug_len[split])) for split, dataset in datasets.items()}
+        n_epochs = 5
+
+    dataloaders = {split: DataLoader(dataset, batch_size=8, num_workers=4, shuffle=True) for split, dataset in datasets.items()}
+    train_curves = {}
+    val_curves = {}
+
+    for norm_name, norm_class in norm_classes.items():
+        model = ResNet(2, 10, batch_norm_class=norm_class).to(device)
+
+        optimizer = optim.SGD(model.parameters(), lr=0.1)
+        scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.2)
+        loss_fn = nn.CrossEntropyLoss()
+
+        best_model, (train_losses, val_losses) = train_model(
+                model, optimizer, scheduler, dataloaders, loss_fn, 
+                max_epochs=n_epochs, early_stopping=True, clip_rho=(norm_name == 'bin'))
+        train_curves[norm_name] = train_losses
+        val_curves[norm_name] = val_losses
+
+        print(f'Model {norm_name}:')
+        eval_model(model, dataloaders)
+
+    pickle.dump(train_curves, open('pt2_bs8_train_curves.pkl', 'wb'))
+    pickle.dump(val_curves, open('pt2_bs8_val_curves.pkl', 'wb'))
+
 if __name__ == "__main__":
 
     device = torch.device('cpu')
@@ -495,7 +536,8 @@ if __name__ == "__main__":
         device = torch.device('mps')
     
     #q1_part2(cifar10_path='data')
-    q1_part3(cifar10_path='data')
-    q2_part1(cifar10_path='data')
+    #q1_part3(cifar10_path='data')
+    #q2_part1(cifar10_path='data')
+    q2_part2(cifar10_path='data')
     
 
