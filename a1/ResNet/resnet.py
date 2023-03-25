@@ -422,7 +422,7 @@ def q1_part3(cifar10_path):
     model = ResNet(2, 10).to(device)
 
     optimizer = optim.SGD(model.parameters(), lr=0.1)
-    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.2)
+    scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=[5,15,40], gamma=0.1)
     loss_fn = nn.CrossEntropyLoss()
 
     best_model, (train_losses, val_losses) = train_model(model, optimizer, scheduler, dataloaders, loss_fn, max_epochs=n_epochs, early_stopping=True)
@@ -470,7 +470,7 @@ def q2_part1(cifar10_path):
         model = ResNet(2, 10, batch_norm_class=norm_class).to(device)
 
         optimizer = optim.SGD(model.parameters(), lr=0.1)
-        scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.2)
+        scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=[5,15,40], gamma=0.1)
         loss_fn = nn.CrossEntropyLoss()
 
         best_model, (train_losses, val_losses) = train_model(
