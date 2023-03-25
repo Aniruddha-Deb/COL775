@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.9)  25 MAR 2023 12:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.9)  25 MAR 2023 16:00
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -445,46 +445,52 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \tcb@temp=\box68
 \tcb@temp=\box69
 \tcb@temp=\box70
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip57
+\multirow@cntb=\count305
+\multirow@dima=\skip58
+\bigstrutjot=\dimen267
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/forest/forest.sty
 Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
  (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen267
-\pgffor@skip=\dimen268
+
+(/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen268
+\pgffor@skip=\dimen269
 \pgffor@stack=\toks41
 \pgffor@toks=\toks42
-))
-(/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count305
-\pgfplotmarksize=\dimen269
+\pgf@plot@mark@count=\count306
+\pgfplotmarksize=\dimen270
 )
-\tikz@lastx=\dimen270
-\tikz@lasty=\dimen271
-\tikz@lastxsaved=\dimen272
-\tikz@lastysaved=\dimen273
-\tikz@lastmovetox=\dimen274
-\tikz@lastmovetoy=\dimen275
-\tikzleveldistance=\dimen276
-\tikzsiblingdistance=\dimen277
+\tikz@lastx=\dimen271
+\tikz@lasty=\dimen272
+\tikz@lastxsaved=\dimen273
+\tikz@lastysaved=\dimen274
+\tikz@lastmovetox=\dimen275
+\tikz@lastmovetoy=\dimen276
+\tikzleveldistance=\dimen277
+\tikzsiblingdistance=\dimen278
 \tikz@figbox=\box71
 \tikz@figbox@bg=\box72
 \tikz@tempbox=\box73
 \tikz@tempbox@bg=\box74
-\tikztreelevel=\count306
-\tikznumberofchildren=\count307
-\tikznumberofcurrentchild=\count308
-\tikz@fig@count=\count309
+\tikztreelevel=\count307
+\tikznumberofchildren=\count308
+\tikznumberofcurrentchild=\count309
+\tikz@fig@count=\count310
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count310
-\pgfmatrixcurrentcolumn=\count311
-\pgf@matrix@numberofcolumns=\count312
+\pgfmatrixcurrentrow=\count311
+\pgfmatrixcurrentcolumn=\count312
+\pgf@matrix@numberofcolumns=\count313
 )
-\tikz@expandcount=\count313
+\tikz@expandcount=\count314
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
@@ -535,7 +541,7 @@ File: tikzlibraryfit.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
-\pgf@intersect@solutions=\count314
+\pgf@intersect@solutions=\count315
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
 \pgfopts@list@add@a@toks=\toks43
@@ -546,86 +552,86 @@ Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
 Package: expl3 2022-02-24 L3 programming layer (loader) 
  (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count315
+\l__color_backend_stack_int=\count316
 \l__pdf_internal_box=\box95
 ))
 Package: xparse 2022-01-12 L3 Experimental document command parser
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/inlinedef/inlinedef.sty
 Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \ID@toks=\toks45
-\ID@count=\count316
+\ID@count=\count317
 )
 \ID@usercommands=\toks46
-\safeloop@depth=\count317
-\safeRKloop@depth=\count318
-\forest@temp@dimen=\dimen278
-\forest@temp@count=\count319
-\forest@n=\count320
-\forest@temp@global@count=\count321
+\safeloop@depth=\count318
+\safeRKloop@depth=\count319
+\forest@temp@dimen=\dimen279
+\forest@temp@count=\count320
+\forest@n=\count321
+\forest@temp@global@count=\count322
 \forest@temp@toks=\toks47
-\forest@temparray@M=\count322
-\forest@temparray@N=\count323
-\forest@global@temparray@M=\count324
-\forest@global@temparray@N=\count325
-\forest@isnum@count=\count326
-\forest@isdim@nonintpart=\count327
-\forest@isdim@dimen=\dimen279
-\forest@sort@m=\count328
-\forest@sort@k=\count329
-\forest@sort@p=\count330
+\forest@temparray@M=\count323
+\forest@temparray@N=\count324
+\forest@global@temparray@M=\count325
+\forest@global@temparray@N=\count326
+\forest@isnum@count=\count327
+\forest@isdim@nonintpart=\count328
+\forest@isdim@dimen=\dimen280
+\forest@sort@m=\count329
+\forest@sort@k=\count330
+\forest@sort@p=\count331
 \bracket@content=\toks48
 \bracket@afterthought=\toks49
-\forest@node@maxid=\count331
-\forest@process@left@M=\count332
-\forest@process@left@N=\count333
-\forest@process@right@M=\count334
-\forest@process@right@N=\count335
-\forest@process@saved@M=\count336
-\forest@process@saved@N=\count337
-\forest@process@result@M=\count338
-\forest@process@result@N=\count339
-\forest@process@n=\count340
+\forest@node@maxid=\count332
+\forest@process@left@M=\count333
+\forest@process@left@N=\count334
+\forest@process@right@M=\count335
+\forest@process@right@N=\count336
+\forest@process@saved@M=\count337
+\forest@process@saved@N=\count338
+\forest@process@result@M=\count339
+\forest@process@result@N=\count340
+\forest@process@n=\count341
 \forest@nodewalk@branch@toks=\toks50
 \forest@nodewalk@shortsteps@resolution=\toks51
 \forest@do@dynamics=\toks52
 \forest@box=\box96
-\forest@xg=\dimen280
-\forest@yg=\dimen281
-\forest@xs=\dimen282
-\forest@ys=\dimen283
+\forest@xg=\dimen281
+\forest@yg=\dimen282
+\forest@xs=\dimen283
+\forest@ys=\dimen284
 \forest@pi@toks=\toks53
 \forest@segment@toks=\toks54
 \forest@PIi@toks=\toks55
 \forest@PIii@toks=\toks56
 \forest@copy@in=\read4
 \forest@copy@out=\write4
-\forest@externalize@max@outer@n=\count341
-\forest@externalize@inner@n=\count342
+\forest@externalize@max@outer@n=\count342
+\forest@externalize@inner@n=\count343
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 34.
+Package hyperref Info: Option `colorlinks' set `true' on input line 35.
  (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -663,16 +669,16 @@ LaTeX Font Info:    ... okay on input line 40.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count343
-\scratchdimen=\dimen284
+\scratchcounter=\count344
+\scratchdimen=\dimen285
 \scratchbox=\box97
-\nofMPsegments=\count344
-\nofMParguments=\count345
+\nofMPsegments=\count345
+\nofMParguments=\count346
 \everyMPshowfont=\toks57
-\MPscratchCnt=\count346
-\MPscratchDim=\dimen285
-\MPnumerator=\count347
-\makeMPintoPDFobject=\count348
+\MPscratchCnt=\count347
+\MPscratchDim=\dimen286
+\MPnumerator=\count348
+\makeMPintoPDFobject=\count349
 \everyMPtoPDFconversion=\toks58
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -680,7 +686,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 40.
+Package hyperref Info: Link coloring ON on input line 41.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -688,44 +694,50 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count349
+\c@section@level=\count350
 )
-LaTeX Info: Redefining \ref on input line 40.
-LaTeX Info: Redefining \pageref on input line 40.
-LaTeX Info: Redefining \nameref on input line 40.
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
  (./report.out) (./report.out)
 \@outlinefile=\write5
 \openout5 = `report.out'.
 
-<../ResNet/q1_part2.pdf, id=23, 867.24pt x 578.16pt>
+<../ResNet/q1_part2.pdf, id=19, 867.24pt x 578.16pt>
 File: ../ResNet/q1_part2.pdf Graphic file (type pdf)
 <use ../ResNet/q1_part2.pdf>
-Package pdftex.def Info: ../ResNet/q1_part2.pdf  used on input line 50.
+Package pdftex.def Info: ../ResNet/q1_part2.pdf  used on input line 51.
 (pdftex.def)             Requested size: 342.37051pt x 228.2516pt.
-<../ResNet/q1_part3.pdf, id=24, 867.24pt x 578.16pt>
+<../ResNet/q1_part3.pdf, id=20, 867.24pt x 578.16pt>
 File: ../ResNet/q1_part3.pdf Graphic file (type pdf)
 <use ../ResNet/q1_part3.pdf>
-Package pdftex.def Info: ../ResNet/q1_part3.pdf  used on input line 55.
+Package pdftex.def Info: ../ResNet/q1_part3.pdf  used on input line 56.
 (pdftex.def)             Requested size: 342.37051pt x 228.2516pt.
  [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../ResNet/q1_part2.pdf> <../ResNet/q1_part3.pdf>] [2] (./report.aux)
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../ResNet/q1_part2.pdf> <../ResNet/q1_part3.pdf>]
+<../ResNet/q2_part3.pdf, id=92, 578.16pt x 433.62pt>
+File: ../ResNet/q2_part3.pdf Graphic file (type pdf)
+<use ../ResNet/q2_part3.pdf>
+Package pdftex.def Info: ../ResNet/q2_part3.pdf  used on input line 132.
+(pdftex.def)             Requested size: 342.37051pt x 256.77312pt.
+ [2 <../ResNet/q2_part3.pdf>] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 968E486DDC0F299A82814828C71683C4;844.
+(rerunfilecheck)             Checksum: 6B74F0A05E5FBEAB6788C295BAF1267F;740.
  ) 
 Here is how much of TeX's memory you used:
- 32491 strings out of 478268
- 725810 string characters out of 5846348
- 1017930 words of memory out of 5000000
- 50258 multiletter control sequences out of 15000+600000
+ 32566 strings out of 478268
+ 727320 string characters out of 5846348
+ 1030493 words of memory out of 5000000
+ 50329 multiletter control sequences out of 15000+600000
  476310 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,7n,80p,1602b,382s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,9n,80p,1602b,382s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (2 pages, 50050 bytes).
+Output written on report.pdf (2 pages, 64548 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 55 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 52 words of extra memory for PDF output out of 10000 (max. 10000000)
 

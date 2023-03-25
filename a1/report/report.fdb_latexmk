@@ -1,7 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1679727472 "report.tex" "report.pdf" "report" 1679727473
+["pdflatex"] 1679740226 "report.tex" "report.pdf" "report" 1679740226
   "../ResNet/q1_part2.pdf" 1679724580 11078 36abe70c6b41fe126e9facc535206243 ""
-  "../ResNet/q1_part3.pdf" 1679727072 12490 2f15275fe72bc757c5985e92eb4e25ca ""
+  "../ResNet/q1_part3.pdf" 1679734790 13272 f41aaac338c4e664e75fa6e90c929f64 ""
+  "../ResNet/q2_part3.pdf" 1679739660 14805 f7b3b7e0b3d79d7b211874b93a1c0b8f ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -151,6 +152,7 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1642022539 6758 7d9d899cbbfc962fbc4bb93f4c69eec2 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty" 1575499565 5766 13a9e8766c47f30327caf893ece86ac8 ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty" 1615845910 6149 2398eec4faa1ee24ff761581e580ecf1 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/parskip/parskip.sty" 1615762720 4288 94714aa7f535440f33181fec52a31963 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty" 1601326656 1090 bae35ef70b3168089ef166db3e66f5b2 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty" 1601326656 410 615550c46f918fcbee37641b02a862d9 ""
@@ -177,9 +179,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1678383510 2826434 aa87dc777ef3febf80de05278305fb6b ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "report.aux" 1679727473 1215 43297b980f0f11186e3057878ea820a0 "pdflatex"
-  "report.out" 1679727473 844 968e486ddc0f299a82814828c71683c4 "pdflatex"
-  "report.tex" 1679727472 1519 78099414795013528687c8445ae72df2 ""
+  "report.aux" 1679740226 1107 72f054248132ea2e7d8737607bf2725f "pdflatex"
+  "report.out" 1679740226 740 6b74f0a05e5fbeab6788c295baf1267f "pdflatex"
+  "report.tex" 1679740224 2957 4e5101f2b3fdf47c7f44d30a2ce001f4 ""
   (generated)
   "report.aux"
   "report.log"
