@@ -279,12 +279,17 @@ class ResNet(nn.Module):
         return self.network(x)
 
 def train_model(model, optimizer, scheduler, dataloaders, loss_fn, 
-                max_epochs=100, early_stopping=True, max_patience=5):
+                max_epochs=100, early_stopping=True, max_patience=5, clip_rho=False):
     train_losses = []
     val_losses = []
     best_val_loss = 10000
     patience = 0
     best_model = None
+
+    bin_gates = []
+    if clip_rho:
+        bin_gates = [p for p in model.parameters() if getattr(p, 'rho', False)] 
+
     for i in tqdm(range(max_epochs)):
         
         curr_train_loss = 0
@@ -303,6 +308,11 @@ def train_model(model, optimizer, scheduler, dataloaders, loss_fn,
             loss = loss_fn(outputs, labels)
             loss.backward()
             optimizer.step()
+
+            # hacky, but no cleaner option
+            if clip_rho:
+                for gate in bin_gates:
+                    gate.data.clamp_(min=0, max=1)
             
             curr_train_loss += loss.detach().item()
 
@@ -463,7 +473,9 @@ def q2_part1(cifar10_path):
         scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.2)
         loss_fn = nn.CrossEntropyLoss()
 
-        best_model, (train_losses, val_losses) = train_model(model, optimizer, scheduler, dataloaders, loss_fn, max_epochs=n_epochs, early_stopping=True)
+        best_model, (train_losses, val_losses) = train_model(
+                model, optimizer, scheduler, dataloaders, loss_fn, 
+                max_epochs=n_epochs, early_stopping=True, clip_rho=(norm_name == 'bin'))
         train_curves[norm_name] = train_losses
         val_curves[norm_name] = val_losses
 
