@@ -351,7 +351,7 @@ def eval_model(model, dataloaders):
     for dl_name, dl in dataloaders.items():
         all_preds = []
         all_true = []
-        for images, labels in tqdm(dl):
+        for images, labels in dl:
             images = images.to(device)
             labels = labels.to(device)
 
@@ -425,7 +425,54 @@ def q1_part3(cifar10_path):
     fig.savefig('q1_part3.pdf')
 
     eval_model(model, dataloaders)
-    torch.save(model, 'part_1.1.pth')
+    torch.save(best_model, 'part_1.1.pth')
+
+    pickle.dump(train_losses, open('pt1_train_curve.pkl', 'wb'))
+    pickle.dump(val_losses, open('pt1_val_curve.pkl', 'wb'))
+
+def q2_part1(cifar10_path):
+    norm_classes = {
+        'bn': BatchNormalizer,
+        'in': InstanceNormalizer,
+        'bin': BatchInstanceNormalizer,
+        'ln': LayerNormalizer,
+        'gn': GroupNormalizer,
+        'nn': nn.Identity
+    }
+
+    splits = {
+        'train': [f'{cifar10_path}/data_batch_{i}' for i in range(1,5)],
+        'val': [f'{cifar10_path}/data_batch_5'],
+        'test': [f'{cifar10_path}/test_batch']
+        }
+    datasets = {split: Cifar10Dataset(batch_files) for split, batch_files in splits.items()}
+
+    n_epochs = 50
+    if DEBUG:
+        datasets = {split: Subset(dataset, np.arange(debug_len[split])) for split, dataset in datasets.items()}
+        n_epochs = 5
+
+    dataloaders = {split: DataLoader(dataset, batch_size=128, num_workers=4, shuffle=True) for split, dataset in datasets.items()}
+    train_curves = {}
+    val_curves = {}
+
+    for norm_name, norm_class in norm_classes.items():
+        model = ResNet(2, 10, batch_norm_class=norm_class).to(device)
+
+        optimizer = optim.SGD(model.parameters(), lr=0.1)
+        scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.2)
+        loss_fn = nn.CrossEntropyLoss()
+
+        best_model, (train_losses, val_losses) = train_model(model, optimizer, scheduler, dataloaders, loss_fn, max_epochs=n_epochs, early_stopping=True)
+        train_curves[norm_name] = train_losses
+        val_curves[norm_name] = val_losses
+
+        print(f'Model {norm_name}:')
+        eval_model(model, dataloaders)
+        torch.save(best_model, f'part_1.2_{norm_name}.pth')
+
+    pickle.dump(train_curves, open('pt2_train_curves.pkl', 'wb'))
+    pickle.dump(val_curves, open('pt2_val_curves.pkl', 'wb'))
 
 if __name__ == "__main__":
 
@@ -437,5 +484,6 @@ if __name__ == "__main__":
     
     #q1_part2(cifar10_path='data')
     q1_part3(cifar10_path='data')
+    q2_part1(cifar10_path='data')
     
 
