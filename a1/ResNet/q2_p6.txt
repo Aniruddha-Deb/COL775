@@ -1,0 +1,48 @@
+Epoch 1:
+    Train loss : 1.5567310541093349
+    Val loss   : 1.1350303329467772
+Epoch 6:
+    Train loss : 0.4771849751219153
+    Val loss   : 0.5146832916092128
+Epoch 11:
+    Train loss : 0.29242196462750436
+    Val loss   : 0.5102502878982573
+Early stopping at epoch 16
+Model bn:
+Evaluating...
+train:
+    Accuracy : 0.956
+    F1 micro : 0.956
+    F1 macro : 0.956
+val:
+    Accuracy : 0.828
+    F1 micro : 0.828
+    F1 macro : 0.828
+test:
+    Accuracy : 0.818
+    F1 micro : 0.818
+    F1 macro : 0.818
+Epoch 1:
+    Train loss : 1.7389708039283753
+    Val loss   : 1.352301165986061
+Epoch 6:
+    Train loss : 0.5909824422709644
+    Val loss   : 0.6652306033432484
+Epoch 11:
+    Train loss : 0.32838224409138783
+    Val loss   : 0.6478061044923961
+Early stopping at epoch 16
+Model gn:
+Evaluating...
+train:
+    Accuracy : 0.938
+    F1 micro : 0.938
+    F1 macro : 0.938
+val:
+    Accuracy : 0.789
+    F1 micro : 0.789
+    F1 macro : 0.788
+test:
+    Accuracy : 0.784
+    F1 micro : 0.784
+    F1 macro : 0.783
